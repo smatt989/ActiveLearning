@@ -348,4 +348,8 @@ if(len(sys.argv) >= 8):
 ###5th parameter: classification task ('old', '3s', 'split')
 ###6th parameter: re-samping turned on or not
 ###7th parameter: how often training is tested with test set
+# example: python activemnist.py 1 10 2000 True old True 5
+# would start one full run with mini-batches of size 10 for 2000 iterations with Active Learning
+# turned on, classifying digits from 0-9, with re-sampling and printing test results every 5 mini-batches
+# in addition it would then run 20 epochs at intervals of 250 label counts
 make_a_good_test(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), sys.argv[4] == 'True', extra_sampling, print_every)
