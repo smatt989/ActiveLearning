@@ -1,7 +1,7 @@
 # ActiveLearning
 MNIST Active Learning
 
-Requirements to install ( python3.5 or above )
+Requirements to install ( python2 or python3 )
 
 `python -m pip install -r requirements.txt --user --no-cache` or 
 
@@ -19,7 +19,7 @@ Additional Running Info
 
 ###1st parameter: number of runs (almost always want just 1 or will be extremely long)
 
-###2nd parameter: how bit each mini-batch should be
+###2nd parameter: how big each mini-batch should be
 
 ###3rd parameter: how many mini-batches in a run
 
